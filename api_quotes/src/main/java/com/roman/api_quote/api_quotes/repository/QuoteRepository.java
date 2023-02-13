@@ -3,7 +3,6 @@ package com.roman.api_quote.api_quotes.repository;
 import com.roman.api_quote.api_quotes.entity.Quote;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 
 import java.util.List;
 

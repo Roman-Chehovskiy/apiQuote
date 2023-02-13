@@ -1,7 +1,5 @@
 package com.roman.api_quote.api_quotes.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -15,16 +13,11 @@ public class Voice {
     @GeneratedValue(generator = "increment")
     @Column(name = "id")
     private Long id;
-//    @Column(name = "quote_id")
-//    private Long quoteId;
     @Column(name = "plus_voice")
     private Long plusVoice;
     @Column(name = "minus_voice")
     private Long minusVoice;
-//    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-//    @JoinColumn(name = "quote_id")
-//    @JsonIgnoreProperties("voice")
-//    private Quote quote;
+
 
 
     public Voice() {
@@ -55,19 +48,5 @@ public class Voice {
     }
 
 
-//    public Long getQuoteId() {
-//        return quoteId;
-//    }
-//
-//    public void setQuoteId(Long quoteId) {
-//        this.quoteId = quoteId;
-//    }
 
-//    public Quote getQuote() {
-//        return quote;
-//    }
-//
-//    public void setQuote(Quote quote) {
-//        this.quote = quote;
-//    }
 }

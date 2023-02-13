@@ -1,7 +1,6 @@
 package com.roman.api_quote.api_quotes.service;
 
 import com.roman.api_quote.api_quotes.entity.Quote;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;

@@ -1,8 +1,5 @@
 package com.roman.api_quote.api_quotes.entity;
 
-import com.fasterxml.jackson.annotation.JsonIdentityReference;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.roman.api_quote.api_quotes.entity.Voice;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -17,8 +14,6 @@ public class Quote {
     @GeneratedValue(generator = "increment")
     @Column(name = "id")
     private Long id;
-//    @Column(name = "voice_id")
-//    private Long voiceId;
     @Column(name = "user_email")
     private String userEmail;
     @Column(name = "quote")
@@ -28,8 +23,7 @@ public class Quote {
     @OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "voice_id")
     private Voice voice;
-//    @ManyToOne
-//    private User user;
+
 
     public Quote() {
     }
@@ -75,19 +69,4 @@ public class Quote {
         this.voice = voice;
     }
 
-//    public User getUser() {
-//        return user;
-//    }
-//
-//    public void setUser(User user) {
-//        this.user = user;
-//    }
-
-//    public Long getVoiceId() {
-//        return voiceId;
-//    }
-//
-//    public void setVoiceId(Long voiceId) {
-//        this.voiceId = voiceId;
-//    }
 }

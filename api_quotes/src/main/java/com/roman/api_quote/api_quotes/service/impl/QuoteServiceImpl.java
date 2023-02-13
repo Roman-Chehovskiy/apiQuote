@@ -4,7 +4,6 @@ import com.roman.api_quote.api_quotes.entity.Quote;
 import com.roman.api_quote.api_quotes.entity.Voice;
 import com.roman.api_quote.api_quotes.repository.QuoteRepository;
 import com.roman.api_quote.api_quotes.service.QuoteService;
-import com.roman.api_quote.api_quotes.service.VoiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -17,8 +16,6 @@ public class QuoteServiceImpl implements QuoteService {
     @Autowired
     QuoteRepository quoteRepository;
 
-    @Autowired
-    VoiceService voiceService;
 
     @Override
     public Quote createQuote(Quote quote) {

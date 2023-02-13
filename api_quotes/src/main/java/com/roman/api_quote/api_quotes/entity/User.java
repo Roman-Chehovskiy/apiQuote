@@ -21,9 +21,7 @@ public class User {
     private String email;
     @Column(name = "date")
     private Date date;
-//    @OneToMany
-//   // @JoinColumn(name = "user_email")
-//    private List<Quote> quotes;
+
 
     public User() {
     }
@@ -61,11 +59,5 @@ public class User {
         this.date = date;
     }
 
-//    public List<Quote> getQuotes() {
-//        return quotes;
-//    }
-//
-//    public void setQuotes(List<Quote> quotes) {
-//        this.quotes = quotes;
-//    }
+
 }

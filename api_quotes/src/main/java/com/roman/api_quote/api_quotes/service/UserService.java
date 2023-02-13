@@ -1,7 +1,6 @@
 package com.roman.api_quote.api_quotes.service;
 
 import com.roman.api_quote.api_quotes.entity.User;
-import org.springframework.stereotype.Service;
 
 
 public interface UserService {
